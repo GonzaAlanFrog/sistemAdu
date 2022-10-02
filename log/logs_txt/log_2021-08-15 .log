@@ -1,0 +1,120 @@
+2021-08-15 00:04:47 [ip] ::1 [text] buscar apertura cierre
+2021-08-15 00:04:47 [ip] ::1 [text] luego de buscar apertura cierre
+2021-08-15 00:04:47 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-08-15 00:04:47 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-08-15 00:04:47 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2021-08-15 16:24:19 [ip] ::1 [text] buscar apertura cierre
+2021-08-15 16:24:19 [ip] ::1 [text] luego de buscar apertura cierre
+2021-08-15 16:24:19 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-08-15 16:24:19 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-08-15 16:24:19 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2021-08-15 16:24:27 [ip] ::1 [text] buscar apertura cierre
+2021-08-15 16:24:27 [ip] ::1 [text] luego de buscar apertura cierre
+2021-08-15 16:24:27 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-08-15 16:24:27 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-08-15 16:24:27 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2021-08-15 17:13:53 [ip] ::1 [text] buscar apertura cierre
+2021-08-15 17:13:53 [ip] ::1 [text] luego de buscar apertura cierre
+2021-08-15 17:13:53 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-08-15 17:13:53 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-08-15 17:13:53 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2021-08-15 18:04:28 [ip] ::1 [text] buscar apertura cierre
+2021-08-15 18:04:28 [ip] ::1 [text] luego de buscar apertura cierre
+2021-08-15 18:04:28 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-08-15 18:04:28 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-08-15 18:04:28 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2021-08-15 19:28:40 [ip] ::1 [text] buscar apertura cierre
+2021-08-15 19:28:40 [ip] ::1 [text] luego de buscar apertura cierre
+2021-08-15 19:28:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-08-15 19:28:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-08-15 19:28:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1

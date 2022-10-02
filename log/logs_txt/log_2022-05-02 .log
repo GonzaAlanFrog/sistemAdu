@@ -1,0 +1,226 @@
+2022-05-02 13:29:00 [ip] ::1 [text] Inciando Sesion
+2022-05-02 13:29:00 [ip] ::1 [text] Datos Recibidos:
+2022-05-02 13:29:00 [ip] ::1 [text] Usuario: gmareco
+2022-05-02 13:29:00 [ip] ::1 [text] Password: 1234
+2022-05-02 13:29:00 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE usuario ='gmareco' and clave ='1234'
+2022-05-02 13:29:00 [ip] ::1 [text] El usuario gmareco No pudo Iniciar Sesion
+2022-05-02 13:29:00 [ip] ::1 [text] Fin Session
+2022-05-02 13:29:08 [ip] ::1 [text] Inciando Sesion
+2022-05-02 13:29:08 [ip] ::1 [text] Datos Recibidos:
+2022-05-02 13:29:08 [ip] ::1 [text] Usuario: gmarecos
+2022-05-02 13:29:08 [ip] ::1 [text] Password: 1234
+2022-05-02 13:29:08 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE usuario ='gmarecos' and clave ='1234'
+2022-05-02 13:29:08 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2022-05-02 13:29:08 [ip] ::1 [text] Fin Session
+2022-05-02 13:29:08 [ip] ::1 [text] entrando a caso 2
+2022-05-02 13:29:08 [ip] ::1 [text] obteniendo cajas
+2022-05-02 13:29:08 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 13:29:08 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 13:29:08 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 13:29:08 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 13:29:08 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 13:29:08 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 13:29:08 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 13:29:08 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 13:49:49 [ip] ::1 [text] SQL per:SELECT `cod_perfil_usu`, `descrip_perfil` FROM `perfil_usuario`
+2022-05-02 13:49:58 [ip] ::1 [text] SQL per:SELECT `cod_perfil_usu`, `descrip_perfil` FROM `perfil_usuario`
+2022-05-02 14:00:32 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 14:00:32 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 14:00:32 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 14:00:32 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 14:00:32 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 14:01:16 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 14:01:16 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 14:01:16 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 14:01:16 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 14:01:16 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 14:11:41 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 14:11:41 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 14:11:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 14:11:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 14:11:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 14:12:47 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 14:12:47 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 14:12:47 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 14:12:47 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 14:12:47 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 14:13:15 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 14:13:15 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 14:13:15 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 14:13:15 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 14:13:15 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 14:16:11 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 14:16:11 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 14:16:11 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 14:16:11 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 14:16:11 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 14:45:26 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 14:45:26 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 14:45:26 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 14:45:26 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 14:45:26 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 14:50:31 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 14:50:31 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 14:50:32 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 14:50:32 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 14:50:32 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2022-05-02 15:03:26 [ip] ::1 [text] buscar apertura cierre
+2022-05-02 15:03:26 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null
+2022-05-02 15:03:26 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2022-05-02 15:03:26 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2022-05-02 15:03:26 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1

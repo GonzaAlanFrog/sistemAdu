@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caja</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/w3.css"/>
+        <script type="text/javascript" src="../js/Jscaja.js"></script>  
+        <script type="text/javascript" src="../js/Jscaja.js"></script>  
+
+    </head>
+    <body class="w3-card-4 w3-white w3-border">
+        <div class="w3-card-4 w3-white w3-border"> 
+            <div class="w3-container w3-green">
+                <h2>Caja</h2>
+            </div></div>
+            <div class="w3-container">
+                <br> 
+                <label class="w3-text-blue"><b>Caja</b></label>
+                <input class="w3-input w3-border" type="text" id="idcaja" disabled="disabled">
+                
+                <label class="w3-text-blue"><b>Funcionario</b></label>
+                <input class="w3-input w3-border" type="text" id="Funcionario" disabled="disabled">
+
+                <label class="w3-text-blue"><b>Fecha</b></label>
+                <input class="w3-input w3-border" type="text" id="Fecha" disabled="disabled">
+            <br>
+                <div>
+                    <table border="1" class="w3-table-all ">
+                        <thead>
+                            <tr class="w3-green">
+                                <td>Numero Factura</td>   
+                                <td >Monto</td>   
+                              
+
+                            </tr>
+                        </thead>
+                        <tbody id="Cuerpos">
+                        </tbody>
+                    </table>
+
+
+
+                </div>     
+                <br>
+
+               <label class="w3-text-blue"><b>Importe Total</b></label>
+                <input class="w3-input w3-border w3-center" type="text" id="monto" disabled="disabled">
+<br>
+                <div class="w3-center">
+                    <button class="w3-btn w3-blue" onclick="reporte();" id="reporte">Reporte</button>
+                    <button class="w3-btn w3-blue" onclick="RealizarCierre(document.getElementById('monto').value);" id="cierre">Cerra Caja</button>
+            </div>
+            <br>
+
+
+
+        </div>
+
+
+
+    </body>
+</html>
+

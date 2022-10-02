@@ -1,0 +1,57 @@
+2022-03-04 13:17:10 [ip] ::1 [text] Inciando Sesion
+2022-03-04 13:17:10 [ip] ::1 [text] Datos Recibidos:
+2022-03-04 13:17:10 [ip] ::1 [text] Usuario: gonzalo
+2022-03-04 13:17:10 [ip] ::1 [text] Password: 123
+2022-03-04 13:17:10 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gonzalo' and clave ='123'
+2022-03-04 13:17:10 [ip] ::1 [text] El usuario gonzalo No pudo Iniciar Sesion
+2022-03-04 13:17:10 [ip] ::1 [text] Fin Session
+2022-03-04 13:29:32 [ip] ::1 [text] Inciando Sesion
+2022-03-04 13:29:32 [ip] ::1 [text] Datos Recibidos:
+2022-03-04 13:29:32 [ip] ::1 [text] Usuario: gmarecos
+2022-03-04 13:29:32 [ip] ::1 [text] Password: 1234
+2022-03-04 13:29:32 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='1234'
+2022-03-04 13:29:32 [ip] ::1 [text] El usuario gmarecos No pudo Iniciar Sesion
+2022-03-04 13:29:32 [ip] ::1 [text] Fin Session
+2022-03-04 13:39:09 [ip] ::1 [text] Inciando Sesion
+2022-03-04 13:39:09 [ip] ::1 [text] Datos Recibidos:
+2022-03-04 13:39:09 [ip] ::1 [text] Usuario: gmarecos
+2022-03-04 13:39:09 [ip] ::1 [text] Password: 1234
+2022-03-04 13:39:09 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE usuario ='gmarecos' and clave ='1234'
+2022-03-04 13:39:09 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2022-03-04 13:39:09 [ip] ::1 [text] Fin Session
+2022-03-04 13:39:09 [ip] ::1 [text] buscar apertura cierre
+2022-03-04 13:39:09 [ip] ::1 [text] luego de buscar apertura cierre
+2022-03-04 13:39:09 [ip] ::1 [text] entrando a caso 2
+2022-03-04 14:05:20 [ip] ::1 [text] Inciando Sesion
+2022-03-04 14:05:20 [ip] ::1 [text] Datos Recibidos:
+2022-03-04 14:05:20 [ip] ::1 [text] Usuario: gmarecos
+2022-03-04 14:05:20 [ip] ::1 [text] Password: 1234
+2022-03-04 14:05:20 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE usuario ='gmarecos' and clave ='1234'
+2022-03-04 14:05:20 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2022-03-04 14:05:20 [ip] ::1 [text] Fin Session
+2022-03-04 14:05:20 [ip] ::1 [text] entrando a caso 2
+2022-03-04 14:05:20 [ip] ::1 [text] buscar apertura cierre
+2022-03-04 14:05:20 [ip] ::1 [text] luego de buscar apertura cierre
+2022-03-04 14:38:53 [ip] ::1 [text] Inciando Sesion
+2022-03-04 14:38:53 [ip] ::1 [text] Datos Recibidos:
+2022-03-04 14:38:53 [ip] ::1 [text] Usuario: gmarecos
+2022-03-04 14:38:53 [ip] ::1 [text] Password: 1234
+2022-03-04 14:38:53 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE usuario ='gmarecos' and clave ='1234'
+2022-03-04 14:38:53 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2022-03-04 14:38:53 [ip] ::1 [text] Fin Session
+2022-03-04 14:38:53 [ip] ::1 [text] entrando a caso 2
+2022-03-04 14:38:53 [ip] ::1 [text] buscar apertura cierre
+2022-03-04 14:38:53 [ip] ::1 [text] luego de buscar apertura cierre
+2022-03-04 14:49:52 [ip] ::1 [text] Inciando Sesion
+2022-03-04 14:49:52 [ip] ::1 [text] Datos Recibidos:
+2022-03-04 14:49:52 [ip] ::1 [text] Usuario: gmarecos
+2022-03-04 14:49:52 [ip] ::1 [text] Password: 1234
+2022-03-04 14:49:52 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE usuario ='gmarecos' and clave ='1234'
+2022-03-04 14:49:52 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2022-03-04 14:49:52 [ip] ::1 [text] Fin Session
+2022-03-04 14:49:52 [ip] ::1 [text] entrando a caso 2
+2022-03-04 14:49:52 [ip] ::1 [text] obteniendo cajas
+2022-03-04 14:49:52 [ip] ::1 [text] buscar apertura cierre
+2022-03-04 14:49:52 [ip] ::1 [text] luego de buscar apertura cierre
+2022-03-04 14:49:52 [ip] ::1 [text] buscar apertura cierre
+2022-03-04 14:49:52 [ip] ::1 [text] luego de buscar apertura cierre

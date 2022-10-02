@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ciudad</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="../js/JsCiudad.js"></script>  
+        <link rel="stylesheet" href="../css/w3.css">
+    </head>
+    <body>
+        <div class="w3-card-4 w3-border-black">
+            <div class="w3-container w3-green">
+                <h2>MANTENER CIUDAD</h2>
+            </div>
+            <div class="w3-container">
+
+                <label class="w3-text-blue"><b>ID</b></label>
+                <input class="w3-input w3-border" type="text" id="id_ciudad">
+
+                    <label class="w3-text-blue"><b>Decripcion</b></label>
+                <input class="w3-input w3-border" type="text" id="Descripcion">
+                
+                 <br>
+                Ingrese Ciudad
+                <input class="w3-input w3-border w3-padding" type="text" placeholder="Ingrese dato" id="buscado" onkeyup="buscador();">
+                
+                <br>
+                <div style="overflow: scroll;height:300px;">
+                    <table border="1" class="w3-table-all ">
+                        <thead>
+                            <tr class="w3-green">
+                                <td >ID</td>   
+                                <td >Decripcion</td>
+                                <th><img src="../img/update.png" alt="Mod"></th>
+                                <th><img src="../img/delete.png" alt="Eli" ></th>
+                            </tr>
+                        </thead>
+                        <tbody id="Cuerpos">
+                        </tbody>
+                    </table>
+                
+                </div> <!--
+                
+                 
+                <div>
+                    <table border="1" class="w3-table-all ">
+                        <thead>
+                            <tr class="w3-green">
+                                <td>ID</td>   
+                                <td >Descripcion</td>   
+                                <th><img src="../img/update.png" alt="Mod"></th>
+                                <th><img src="../img/delete.png" alt="Eli" ></th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="Cuerpos1">
+                        </tbody>
+                    </table>
+
+
+
+                </div>  -->   
+                <br>
+
+             
+         <div class="w3-center">
+             <button class="w3-btn w3-blue" onclick="validacionBtn(1);" id="agregar">Agregar</button>
+        <button class="w3-btn w3-blue" onclick="validacionBtn(2)" id="eliminar">Eliminar</button>
+        <button class="w3-btn w3-blue" onclick="validacionBtn(3)" id="modificar">Modificar</button>
+        <button class="w3-btn w3-blue" onclick="validacionBtn(4)" id="cancelar">Cancelar</button> </div>
+                
+
+        </div>
+            
+
+        </div>
+    </body>
+</html>

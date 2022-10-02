@@ -1,0 +1,74 @@
+2021-07-16 09:04:37 [ip] ::1 [text] Inciando Sesion
+2021-07-16 09:04:37 [ip] ::1 [text] Datos Recibidos:
+2021-07-16 09:04:37 [ip] ::1 [text] Usuario: gmarecos
+2021-07-16 09:04:37 [ip] ::1 [text] Password: 123
+2021-07-16 09:04:37 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-16 09:04:37 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-16 09:04:37 [ip] ::1 [text] Fin Session
+2021-07-16 09:04:37 [ip] ::1 [text] buscar apertura cierre
+2021-07-16 09:04:37 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-16 09:04:37 [ip] ::1 [text] entrando a caso 2
+2021-07-16 09:04:37 [ip] ::1 [text] obteniendo cajas
+2021-07-16 09:04:37 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-07-16 09:04:37 [ip] ::1 [text] buscar apertura cierre
+2021-07-16 09:04:37 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-07-16 09:04:37 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-16 09:04:37 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2021-07-16 09:04:37 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-07-16 09:04:37 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-07-16 09:04:37 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2021-07-16 09:04:41 [ip] ::1 [text] Nueva Apertura: 
+2021-07-16 09:04:41 [ip] ::1 [text] idfuncionario: 1
+2021-07-16 09:04:41 [ip] ::1 [text] IdCaja: 1
+2021-07-16 09:04:41 [ip] ::1 [text] monto: 10000
+2021-07-16 09:04:41 [ip] ::1 [text] Insert de apertura: INSERT INTO apertura_cierre(monto_ape, caja_cod_caja,usuario_cod_usu) VALUES  (?,?,?)
+2021-07-16 09:04:41 [ip] ::1 [text] buscar apertura cierre
+2021-07-16 09:04:41 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-16 09:04:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-07-16 09:04:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-07-16 09:04:41 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1

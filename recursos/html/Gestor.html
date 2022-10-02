@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../recursos/css/w3.css"/>
+         <script type="text/javascript">
+            function loadDocPdf(bandera,valor) {
+                var datos;
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "/Web_Proyect/Gestor?bandera="+bandera+"&valor="+valor+"");
+                xhr.responseType = "arraybuffer";
+
+                xhr.onload = function () {
+                    if (this.status === 200) {
+                        var blob = new Blob([xhr.response], {type: "application/pdf"});
+                        var objectUrl = URL.createObjectURL(blob);
+                        window.open(objectUrl,'_blank');
+                    }
+                };
+                xhr.send();
+               // xhr.send(JSON.stringify(datos = {bandera: bandera}));
+               // xhr.send(JSON.stringify(datos = {bandera: 2, id: $('#codigo_presupuesto').val()}));
+            }
+        </script>
+    </head>
+    <body>
+    <center>
+     <div class="w3-card-4 w3-white w3-border" id="cuerpobody">
+            <div class="w3-container w3-green ">
+                <h2>Reportes</h2>
+            </div>
+            
+          
+            
+         <div class="w3-container" >  
+    
+        <div>
+            <h2>Listados de Referenciales</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Perfiles <br>
+                            <input type="button" value=" PDF" onclick="loadDocPdf(1,0);" />
+                        </td>
+                        <td>
+                            Clientes <br>
+                            <input type="button" value=" PDF" onclick="loadDocPdf(2,0);" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Funcionarios <br>
+                            <input type="button" value=" PDF" onclick="loadDocPdf(3,0);" />
+                        </td>
+                        <td>
+                            Usuarios <br>
+                            <input type="button" value=" PDF" onclick="loadDocPdf(4,0);" />
+                        </td>
+                    </tr>
+                     <tr>
+                        
+           
+                    </tr>
+                    <tr>
+                        <td>
+                            Reimprimir  Factura <br>
+                            <input type="text" id="id_grupo"> <br>
+                            <input type="button" value="Ver PDF" onclick="loadDocPdf(5,document.getElementById('id_grupo').value);" />
+                        </td>
+                    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </center>
+    </div> 
+    </body>
+</html>

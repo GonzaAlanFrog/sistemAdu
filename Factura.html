@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Factura</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <body  style="background-color:#FFFFFF; font-size:11px; font-family:Arial, Helvetica, sans-serif;">
+<table width="1050" height="130" border="0" align="center" cellspacing="0" background="images/top_1050.png">
+  <tr>
+    <td width="98%">&nbsp;</td>
+  </tr>
+</table>
+ 
+<table width="1050" border="0" align="center" cellpadding="0" cellspacing="0" background="images/center_1050.png">
+  <tr>
+    <td width="98%"><table width="96%" border="0" align="center">
+     
+      <tr>
+        <td bgcolor="#FFFFFF">
+    
+             <table width="100%" height="72" border="1" align="center" cellpadding="0" cellspacing="0">
+              
+              <tr>
+                <td width="48%" height="23" align="left" bordercolor="#000000" bgcolor="#FFFFFF"><strong>&nbsp;&nbsp;&nbsp;FECHA DE EMISION:&nbsp;&nbsp;&nbsp;<input type="text" name="fecha_emision" value="" disabled="disbaled"/> </strong></td>
+                <td colspan="4" align="left" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;&nbsp;&nbsp;<strong>CONDICION DE VENTA:</strong><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input value ="Contado" disabled="disbaled"></strong></td>
+               </tr>
+              <tr>
+                <td height="22" colspan="5" align="left" bordercolor="#000000" bgcolor="#FFFFFF"><strong>&nbsp;&nbsp;&nbsp;RUC:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" disabled="disbaled" name="ruc" value="" /> </strong></td>
+               </tr>
+              <tr>
+                <td height="22" colspan="2" align="left" bordercolor="#000000" bgcolor="#FFFFFF"><strong>&nbsp;&nbsp;&nbsp;NOM. O RAZON SOCIAL:</strong></strong>&nbsp;&nbsp;&nbsp;<input  disabled="disbaled" type="text" name="nom_razon_social" /> </td>
+                <!--<td width="52%" colspan="3" align="LEFT" bordercolor="#000000" bgcolor="#FFFFFF"><strong>&nbsp;&nbsp;&nbsp;NOTA DE REMISI&Oacute;N N&deg; &nbsp;&nbsp;&nbsp;<input type="text" name="nota_remision" /></strong></td>-->
+               </tr>
+                
+            </table>
+                
+             <table width="100%" border="1" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                 <td width="116" height="19" align="center" bordercolor="#000000" bgcolor="#E6E6E6"></td>
+                 <td colspan="2" align="center" bordercolor="#000000" bgcolor="#E6E6E6"></strong></td>
+                 <td width="119" align="center" bordercolor="#000000" bgcolor="#E6E6E6"><strong>PRECIO</strong></td>
+                 <td colspan="3" align="center" bordercolor="#000000" bgcolor="#E6E6E6"><strong>VALOR DE VENTA</strong></td>
+                </tr>
+               <tr>
+                 <td width="116" align="center" bordercolor="#000000" bgcolor="#E6E6E6"><strong>CANTIDAD</strong></td>
+                 <td colspan="2" align="center" bordercolor="#000000" bgcolor="#E6E6E6"><strong>DESCRIPCION</strong></td>
+                 <td width="119" align="center" bordercolor="#000000" bgcolor="#E6E6E6"><strong>UNITARIO</strong></td>
+                 <td width="120" align="center" bordercolor="#000000" bgcolor="#E6E6E6"><strong>EXENTAS</strong></td>
+                 <td width="105" align="center" bordercolor="#000000" bgcolor="#E6E6E6"><strong>5%</strong></td>
+                 <td width="106" align="center" bordercolor="#000000" bgcolor="#E6E6E6"><strong>10%</strong></td>
+               </tr>
+               
+               <?php
+                require '../PHP/Session.class.php';
+                $data = Session::getInstance();
+                echo $data->idReportecaja;
+                
+                ?>
+               
+               <tr>
+                 <td border bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td colspan="2" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td> 
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td colspan="2" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td> 
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td colspan="2" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td> 
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td colspan="2" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td> 
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td colspan="2" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td> 
+                 <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                 <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+               </tr>
+                <tr>
+                  <td bordercolor="#000000" bgcolor="#FFFFFF"><strong>SUBTOTAL</strong></td>
+                  <td colspan="2" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                  <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                  <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                  <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                  <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+               </tr>
+                <tr>
+                  <td bordercolor="#000000" bgcolor="#FFFFFF"><span class="Estilo1">TOTAL A PAGAR </span></td>
+                  <td colspan="5" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                  <td align="center" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;  </td>
+               </tr>
+                <tr>
+                  <td height="19" bordercolor="#000000" bgcolor="#FFFFFF"><span class="Estilo1">LIQUIDACION DEL IVA:</span> </td>
+                  <td align="right" width="65" bordercolor="#000000" bgcolor="#FFFFFF">5%</td>
+                  <td width="372" bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                  <td align="right" bordercolor="#000000" bgcolor="#FFFFFF">10%</td>
+                  <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+                  <td align="center" bordercolor="#000000" bgcolor="#FFFFFF"><strong>TOTAL</strong></td>
+                  <td bordercolor="#000000" bgcolor="#FFFFFF">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td colspan="7" bordercolor="#FFFFFF"><p>&nbsp;</p></td>
+               </tr>
+               <tr>
+                 <td bordercolor="#009900" colspan="7" bgcolor="#FFFFFF"><div align="center">
+                  <!-- <input type="submit" name="button" onclick="confirmacion()" value="Salir sin Guardar" class="boton_red" />-->
+                 <!--   <input type="button" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Imprimir&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" <!--onclick="javascript:window.open('fact_load.php')" class="boton3d"> 
+                 </div></td>
+               </tr>
+             </table>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+ 
+</body>

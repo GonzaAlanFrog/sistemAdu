@@ -1,0 +1,213 @@
+2021-07-12 11:43:57 [ip] ::1 [text] Inciando Sesion
+2021-07-12 11:43:57 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 11:43:57 [ip] ::1 [text] Usuario:gmarecos
+2021-07-12 11:43:57 [ip] ::1 [text] Password:123
+2021-07-12 11:43:57 [ip] ::1 [text] El usuario gmarecos No pudo Iniciar Sesion
+2021-07-12 11:43:57 [ip] ::1 [text] Fin Session
+2021-07-12 11:50:55 [ip] ::1 [text] Inciando Sesion
+2021-07-12 11:50:55 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 11:50:55 [ip] ::1 [text] Usuario:gmarecos
+2021-07-12 11:50:55 [ip] ::1 [text] Password:123
+2021-07-12 11:50:55 [ip] ::1 [text] El usuario gmarecos No pudo Iniciar Sesion
+2021-07-12 11:50:55 [ip] ::1 [text] Fin Session
+2021-07-12 11:51:18 [ip] ::1 [text] Inciando Sesion
+2021-07-12 11:51:18 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 11:51:18 [ip] ::1 [text] Usuario:gmarecos
+2021-07-12 11:51:18 [ip] ::1 [text] Password:123
+2021-07-12 11:51:18 [ip] ::1 [text] El usuario gmarecos No pudo Iniciar Sesion
+2021-07-12 11:51:18 [ip] ::1 [text] Fin Session
+2021-07-12 11:53:05 [ip] ::1 [text] Inciando Sesion
+2021-07-12 11:53:05 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 11:53:05 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 11:53:05 [ip] ::1 [text] Password: 123
+2021-07-12 11:53:05 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, perfil_usuario_cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 11:53:05 [ip] ::1 [text] El usuario gmarecos No pudo Iniciar Sesion
+2021-07-12 11:53:05 [ip] ::1 [text] Fin Session
+2021-07-12 11:55:31 [ip] ::1 [text] Inciando Sesion
+2021-07-12 11:55:31 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 11:55:31 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 11:55:31 [ip] ::1 [text] Password: 123
+2021-07-12 11:55:31 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 11:55:31 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-12 11:55:31 [ip] ::1 [text] Fin Session
+2021-07-12 11:55:31 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 11:55:31 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 11:55:31 [ip] ::1 [text] entrando a caso 2
+2021-07-12 12:00:52 [ip] ::1 [text] Inciando Sesion
+2021-07-12 12:00:52 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 12:00:52 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 12:00:52 [ip] ::1 [text] Password: 123
+2021-07-12 12:00:52 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 12:00:52 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-12 12:00:52 [ip] ::1 [text] Fin Session
+2021-07-12 12:00:52 [ip] ::1 [text] entrando a caso 2
+2021-07-12 12:00:52 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 12:00:52 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 12:03:43 [ip] ::1 [text] Inciando Sesion
+2021-07-12 12:03:43 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 12:03:43 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 12:03:43 [ip] ::1 [text] Password: 123
+2021-07-12 12:03:43 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 12:03:43 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-12 12:03:43 [ip] ::1 [text] Fin Session
+2021-07-12 12:03:43 [ip] ::1 [text] entrando a caso 2
+2021-07-12 12:03:43 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 12:03:43 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 12:05:42 [ip] ::1 [text] Inciando Sesion
+2021-07-12 12:05:42 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 12:05:42 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 12:05:42 [ip] ::1 [text] Password: 123
+2021-07-12 12:05:42 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 12:05:42 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-12 12:05:42 [ip] ::1 [text] Fin Session
+2021-07-12 12:05:42 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 12:05:42 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 12:05:42 [ip] ::1 [text] entrando a caso 2
+2021-07-12 13:39:58 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 13:39:58 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 13:40:15 [ip] ::1 [text] Inciando Sesion
+2021-07-12 13:40:15 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 13:40:15 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 13:40:15 [ip] ::1 [text] Password: 123
+2021-07-12 13:40:15 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 13:40:15 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-12 13:40:15 [ip] ::1 [text] Fin Session
+2021-07-12 13:40:15 [ip] ::1 [text] entrando a caso 2
+2021-07-12 13:40:15 [ip] ::1 [text] obteniendo cajas
+2021-07-12 13:40:15 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 13:40:15 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 13:40:15 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 13:40:15 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 13:41:15 [ip] ::1 [text] idfuncionario: 1
+2021-07-12 13:41:15 [ip] ::1 [text] IdCaja: 1
+2021-07-12 13:41:15 [ip] ::1 [text] monto:10000
+2021-07-12 13:41:15 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 13:41:15 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:11:05 [ip] ::1 [text] Inciando Sesion
+2021-07-12 14:11:05 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 14:11:05 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 14:11:05 [ip] ::1 [text] Password: 123
+2021-07-12 14:11:05 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 14:11:05 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-12 14:11:05 [ip] ::1 [text] Fin Session
+2021-07-12 14:11:05 [ip] ::1 [text] entrando a caso 2
+2021-07-12 14:11:05 [ip] ::1 [text] obteniendo cajas
+2021-07-12 14:11:05 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:11:05 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:11:05 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:11:05 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:11:21 [ip] ::1 [text] Nueva Apertura: 
+2021-07-12 14:11:21 [ip] ::1 [text] idfuncionario: 1
+2021-07-12 14:11:21 [ip] ::1 [text] IdCaja: 1
+2021-07-12 14:11:21 [ip] ::1 [text] monto: 10000
+2021-07-12 14:11:21 [ip] ::1 [text] Insert de apertura: INSERT INTO apertura_cierre(monto_ape, caja_cod_caja,usuario_cod_usu) VALUES  (?,?,?)
+2021-07-12 14:11:21 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:11:21 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:14:03 [ip] ::1 [text] Inciando Sesion
+2021-07-12 14:14:03 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 14:14:03 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 14:14:03 [ip] ::1 [text] Password: 123
+2021-07-12 14:14:03 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 14:14:03 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-12 14:14:03 [ip] ::1 [text] Fin Session
+2021-07-12 14:14:03 [ip] ::1 [text] entrando a caso 2
+2021-07-12 14:14:03 [ip] ::1 [text] obteniendo cajas
+2021-07-12 14:14:03 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:14:03 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:14:03 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:14:03 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:14:13 [ip] ::1 [text] Nueva Apertura: 
+2021-07-12 14:14:13 [ip] ::1 [text] idfuncionario: 1
+2021-07-12 14:14:13 [ip] ::1 [text] IdCaja: 1
+2021-07-12 14:14:13 [ip] ::1 [text] monto: 10000
+2021-07-12 14:14:13 [ip] ::1 [text] Insert de apertura: INSERT INTO apertura_cierre(monto_ape, caja_cod_caja,usuario_cod_usu) VALUES  (?,?,?)
+2021-07-12 14:14:13 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:14:13 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:18:34 [ip] ::1 [text] Inciando Sesion
+2021-07-12 14:18:34 [ip] ::1 [text] Datos Recibidos:
+2021-07-12 14:18:34 [ip] ::1 [text] Usuario: gmarecos
+2021-07-12 14:18:34 [ip] ::1 [text] Password: 123
+2021-07-12 14:18:34 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='gmarecos' and clave ='123'
+2021-07-12 14:18:34 [ip] ::1 [text] El usuario gmarecos Se ha Logueado xdxd
+2021-07-12 14:18:34 [ip] ::1 [text] Fin Session
+2021-07-12 14:18:34 [ip] ::1 [text] entrando a caso 2
+2021-07-12 14:18:34 [ip] ::1 [text] obteniendo cajas
+2021-07-12 14:18:34 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:18:34 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:18:34 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:18:34 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:18:47 [ip] ::1 [text] Nueva Apertura: 
+2021-07-12 14:18:47 [ip] ::1 [text] idfuncionario: 1
+2021-07-12 14:18:47 [ip] ::1 [text] IdCaja: 1
+2021-07-12 14:18:47 [ip] ::1 [text] monto: 10000
+2021-07-12 14:18:47 [ip] ::1 [text] Insert de apertura: INSERT INTO apertura_cierre(monto_ape, caja_cod_caja,usuario_cod_usu) VALUES  (?,?,?)
+2021-07-12 14:18:47 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:18:47 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:28:58 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:28:58 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:28:58 [ip] ::1 [text] Imprimiendo Array datos
+2021-07-12 14:28:58 [ip] ::1 [text] SQL PermisosMenu:SELECT * FROM menu
+2021-07-12 14:28:58 [ip] ::1 [text] SQL PermisosMenu:SELECT * FROM menu
+2021-07-12 14:28:58 [ip] ::1 [text] SQL PermisosMenu:SELECT * FROM menu
+2021-07-12 14:30:31 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 14:30:31 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 14:30:31 [ip] ::1 [text] Imprimiendo Array datos
+2021-07-12 14:30:31 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuiten item on item.id=per.idmenuitem
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.id_perfil='1' and menu.id='1'and per.estado=1
+2021-07-12 14:30:31 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuiten item on item.id=per.idmenuitem
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.id_perfil='1' and menu.id='3'and per.estado=1
+2021-07-12 14:30:31 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuiten item on item.id=per.idmenuitem
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.id_perfil='1' and menu.id='4'and per.estado=1
+2021-07-12 15:14:30 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 15:14:30 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 15:14:30 [ip] ::1 [text] Imprimiendo Array datos
+2021-07-12 15:14:30 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idmenuitem
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-07-12 15:14:30 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idmenuitem
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-07-12 15:14:30 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idmenuitem
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1
+2021-07-12 15:16:19 [ip] ::1 [text] buscar apertura cierre
+2021-07-12 15:16:19 [ip] ::1 [text] luego de buscar apertura cierre
+2021-07-12 15:16:19 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='1' and per.estado=1
+2021-07-12 15:16:19 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='3' and per.estado=1
+2021-07-12 15:16:19 [ip] ::1 [text] SQL PermisosMenu:SELECT item.url
+    ,item.descripccion as item
+    FROM permisomenu per
+    INNER JOIN menuitem item on item.id=per.idorden
+    INNER JOIN menu menu on menu.id=item.id_menu
+    where per.cod_perfil_usu='1' and menu.id='4' and per.estado=1

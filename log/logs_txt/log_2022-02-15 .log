@@ -1,0 +1,7 @@
+2022-02-15 10:32:50 [ip] ::1 [text] Inciando Sesion
+2022-02-15 10:32:50 [ip] ::1 [text] Datos Recibidos:
+2022-02-15 10:32:50 [ip] ::1 [text] Usuario: nk
+2022-02-15 10:32:50 [ip] ::1 [text] Password: nkn
+2022-02-15 10:32:50 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE nombre ='nk' and clave ='nkn'
+2022-02-15 10:32:50 [ip] ::1 [text] El usuario nk No pudo Iniciar Sesion
+2022-02-15 10:32:50 [ip] ::1 [text] Fin Session

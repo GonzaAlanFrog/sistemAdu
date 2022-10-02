@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/w3.css"/>
+        <script type="text/javascript" src="../js/JsFactCompra.js"></script>  
+    </head>
+    <body>
+    <div class="w3-card-4 w3-white w3-border">
+            <div class="w3-container w3-green w3-center">
+                <h4>Realizar Compra</h4>
+            </div>
+        
+            <div class="w3-container w3-green" >
+                <div id="fecha_actual" class="w3-display-topleft" style="margin: 10px;"></div>
+                <div id="nro_trx" class="w3-display-topright" style="margin: 10px;">Nro.Transaccion:</div>
+            </div>
+        
+        <div class="w3-container w3-border" id="panelDatos" style="width:100%; background-color:#F2F2F2;"> 
+            
+        <div class="w3-container w3-border-right w3-left" style="width:50%; height:50%; background-color:#F2F2F2;" id="panelCliente">
+        <br><label class="w3-text-black"><b>Codigo..:</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-black" disabled="disabled" type="text" id="cod_cliente" style="width:15%; margin-bottom:2px;" ></B>
+        
+        <button class="w3-right w3-round w3-border w3-green "  id="cargarBuscadorCliente" style="margin-right:15%;" onclick="cargarBuscadorCliente();">Buscar</button>
+        <br>
+
+        <label class="w3-text-black"><b>CI/RUC:</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-black" disabled="disabled" type="text" id="documento_cliente" style="width:50%; margin-bottom:2px;" ></B><br>   
+        
+        <label class="w3-text-black"><b>Nombre:</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-black" disabled="disabled" type="text" id="nombre_cliente" style="width:50%; margin-bottom:2px;" ></B><br>    
+        
+        <label class="w3-text-black"><b>Telefon.:</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-black" disabled="disabled" type="text" id="telefono_cliente" style="width:50%; margin-bottom:2px;" ></B><br>   
+        
+        <label class="w3-text-black"><b>Correo..:</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-black"  disabled="disabled" type="text" id="correo_cliente" style="width:50%; margin-bottom:2px;" ></B>    
+        <br> 
+        </div>
+            
+        <div class="w3-container  w3-right" style="width:50%; height:50%;background-color:#F2F2F2" id="panelProducto">   
+        <br><label class="w3-text-black"><b>Codigo.Pr:</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-text-black" disabled="disabled" type="text" id="cod_producto" style="width:15%; margin-bottom:2px;" ></B>
+        
+        <button class="w3-right w3-round w3-border w3-green w3-disabled" disabled="disabled" id="cargarBuscadorPro" style="margin-right:35%;" onclick="cargarBuscadorPro();">Buscar</button> 
+        <br>
+
+        <label class="w3-text-black"><b>Producto.:</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-black"  disabled="disabled" type="text" id="name_producto" style="width:50%; margin-bottom:2px;" ></B><br>   
+        
+        <label class="w3-text-black"><b>Stock.P...:</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-black" disabled="disabled" type="text" id="stock_producto" style="width:50%; margin-bottom:2px;" ></B><br>    
+        
+        <label class="w3-text-black"><b>P.Unidad :</b></label>
+        <B><input class="w3-round w3-border w3-disabled w3-black" disabled="disabled" type="text" id="precio_producto" style="width:50%; margin-bottom:2px; " ></B><br> 
+        
+        <label class="w3-text-black"><b>Cantidad :</b></label>
+        <B><input class="w3-round w3-border w3-hover-border-dark-grey w3-disabled"  disabled="disabled" type="text" id="cantidad_producto" style="width:50%; margin-bottom:2px;" > </B>
+        
+        <button class="w3-right w3-round w3-border w3-green w3-disabled" disabled="disabled" onclick="validacionOPeraciones(2);" id="agregar_tabla" style="margin-right:10px; margin-bottom:3px;">Agregar</button> 
+        
+        </div>    
+            
+        </div>    
+        
+            
+           
+                
+        <div id="tabla" style="overflow:scroll;height:200px;">
+            <table border="1" class="w3-table-all " >
+                <thead>
+                    <tr class="w3-green">
+                        <th>Cod.Pro</th>   
+                        <th>Producto</th>  
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Importe</th>
+                    </tr>
+                </thead>
+                <tbody id="Cuerpos">
+                    
+                </tbody>
+            </table>
+        </div>
+        
+       
+        <div id="final" style="width: 100%;background-color:#F2F2F2;;" class="w3-container w3-border ">
+  
+        <div id="Botonera" class="w3-left w3-center w3-border-right" style="width:70%; margin-top:10px;margin-bottom:10px; ">
+        <button class="w3-btn w3-blue w3-round" onclick="validacionOPeraciones(1)" id="nuevo" style="margin-right:60px;">Nueva Factura</button>
+        <button class="w3-btn w3-round w3-green w3-disabled" disabled="disabled" onclick="loadDocPdf();" id="imprimir" style="background-color: #0B6138; margin-right:60px;">Imprimir Factura</button>
+        <button class="w3-btn w3-round w3-red w3-disabled "  disabled="disabled" onclick="limpiar();" id="cancelar" style="margin-right:60px;">Cancelar</button>
+        </div>    
+            
+        <div id="sumass" class="w3-right" style="width:30%;margin-top:10px; margin-bottom:10px; ">
+        <label class="w3-text-black w3-left" style="width:30%;margin-top:5px;"><b>TOTAL:</b></label>    
+        <input class="w3-round w3-border-blue-gray w3-large w3-text-green" disabled="disabled" type="text"  id="suma_total" style="width:60%; margin-bottom:2px; height:35px; " >         
+        </div>     
+   
+        </div>
+        
+         <div class="w3-container">
+                <div id="datos_Abuscar" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('datos_Abuscar').style.display = 'none'" 
+                                  class="w3-button w3-display-topright">&times;</span>
+                            <h2>Ingrese Descripción</h2>
+                            <input class="w3-input w3-border w3-padding" type="text" placeholder="Ingrese dato" id="dato_filtro" onkeyup="obDatosUnicoBuscador();">
+                </header>
+                <div class='w3-container' style="overflow:scroll;height:200px;">
+                <table class='w3-table-all'>
+                <thead>
+                <tr class='w3-green'>
+                    
+                                <td>Codigo</td>   
+                                <td >ruc</td>   
+                                <td >Nombre</td> 
+                                <td >telefono</td> 
+                                <td >email</td> 
+                                
+                                
+                                <th><img src='../img/select.png' alt='Sel'></th>
+               
+                </tr>
+                </thead>
+                <tbody id='datosCuerpoBuscador'>
+                    
+               
+                
+                </tbody>
+                </table>
+                
+                </div>    
+         
+         
+                <footer class='w3-container w3-teal'>
+                <p>CLICK SOBRE EL REGISTRO PARA SELECCIONAR</p>
+                </footer>
+               </div>    
+
+                    
+                    
+                    
+                    
+                </div>
+                </div>
+        
+        
+        
+        
+        <div class="w3-container" id="producto">
+                <div id="datos_Abuscarp" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('datos_Abuscarp').style.display = 'none'" 
+                                  class="w3-button w3-display-topright">&times;</span>
+                            <h2>Ingrese Descripción</h2>
+                            <input class="w3-input w3-border w3-padding" type="text" placeholder="Ingrese dato" id="dato_filtrop" onkeyup="obDatosUnicoBuscadorp();">
+                </header>
+                <div class='w3-container' style="overflow:scroll;height:200px;">
+                <table class='w3-table-all'>
+                <thead>
+                <tr class='w3-green'>
+                    
+                                <td>Codigo</td>   
+                                <td >Descripcion</td>     
+                                <td >stock</td>     
+                                <td >unidad</td>     
+                                   
+                                <th><img src='../img/select.png' alt='Sel'></th>
+               
+                </tr>
+                </thead>
+                <tbody id='datosCuerpoBuscadorp'>
+                    
+               
+                
+                </tbody>
+                </table>
+                
+                </div>    
+         
+         
+                <footer class='w3-container w3-teal'>
+                <p>CLICK SOBRE EL REGISTRO PARA SELECCIONAR</p>
+                </footer>
+               </div>    
+
+                    
+                    
+                    
+                    
+                </div>
+                </div>
+        
+
+        
+        
+      
+     </div>        
+    </body>
+</html>

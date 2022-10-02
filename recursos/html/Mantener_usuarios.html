@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/w3.css"/>
+        <script type="text/javascript" src="../js/JsUsuarios.js"></script>  
+    </head>
+    <body>
+        <div class="w3-card-4  w3-white w3-border">
+            <div class="w3-container w3-green">
+                <h2>Mantener Usuarios</h2>
+            </div>
+            <div class="w3-container">
+                <br> 
+                <label class="w3-text-blue"><b>Cod</b></label>
+                <input class="w3-input w3-border" type="text" id="id_usuario">
+
+                <label class="w3-text-blue"><b>Usuario</b></label>
+                <input class="w3-input w3-border" type="text" id="usu_nombre">
+
+                <label class="w3-text-blue"><b>Clave</b></label>
+                <input class="w3-input w3-border" type="text" id="usu_clave">
+
+                <label class="w3-text-blue"><b>Perfil</b></label>
+                <select id="id_perfil" class="w3-select w3-border">
+                </select>
+
+
+              
+
+
+                <br>
+                Ingrese Usuario
+                <input class="w3-input w3-border w3-padding" type="text" placeholder="Ingrese dato" id="Buscar" onkeyup="buscador();">
+                <br>   
+                <div>
+                    <table border="1" class="w3-table-all ">
+                        <thead>
+                            <tr class="w3-green">
+                                <td>Cod</td>   
+                                <td >Usuario</td>   
+                                <td >Clave</td>   
+                                <td >Funcionario</td>   
+                                <td >Perfil</td>   
+                                <th><img src="../img/update.png" alt="Mod"></th>
+                                <th><img src="../img/delete.png" alt="Eli" ></th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="Cuerpos">
+                        </tbody>
+                    </table>
+
+
+
+                </div>     
+                <br>
+
+                <div class="w3-container">
+                <div id="datos_Abuscar" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('datos_Abuscar').style.display = 'none'" 
+                                  class="w3-button w3-display-topright">&times;</span>
+                            <h2>Ingrese Descripción</h2>
+                            <input class="w3-input w3-border w3-padding" type="text" placeholder="Ingrese dato" id="dato_filtro" onkeyup="obDatosUnicoBuscador();">
+                </header>
+                <div class='w3-container' style="overflow:scroll;height:200px;">
+                <table class='w3-table-all'>
+                <thead>
+                <tr class='w3-green'>
+                    
+                                <td>Codigo</td>   
+                                <td >Descripcion</td>     
+                                <th><img src='../img/select.png' alt='Sel'></th>
+               
+                </tr>
+                </thead>
+                <tbody id='datosCuerpoBuscador'>
+                    
+               
+                
+                </tbody>
+                </table>
+                
+                </div>    
+         
+         
+                <footer class='w3-container w3-teal'>
+                <p>CLICK SOBRE EL REGISTRO PARA SELECCIONAR</p>
+                </footer>
+               </div>    
+
+                    
+                    
+                    
+                    
+                </div>
+                </div>
+
+                <div class="w3-center">
+                    <button class="w3-btn w3-blue" onclick="validacionBtn(1)" id="agregar">Agregar</button>
+                    <button class="w3-btn w3-blue" onclick="validacionBtn(2)" id="eliminar">Eliminar</button>
+                    <button class="w3-btn w3-blue" onclick="validacionBtn(3)" id="modificar">Modificar</button>
+                    <button class="w3-btn w3-blue" onclick="validacionBtn(4)" id="cancelar">Cancelar</button> </div>
+
+
+            </div>
+            <br>
+
+
+
+        </div>
+
+
+
+    </body>
+</html>
+
