@@ -6,7 +6,7 @@ function CargaTabla() {
 
             var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/formaCobroCtr.php";
+            URL = "../PHP/MarcaCtr.php";
             xhr.open(method, URL, true);
             xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -16,10 +16,10 @@ function CargaTabla() {
             var opcion1;
             for (i = 0; i < json.length; i++) {
                 filas += "<tr>";
-                filas += "<td>" + json[i].cod_for_cob + "</td>";
-                filas += "<td>" + json[i].descrip_for_cob + "</td>";
-                filas += "<td><img onclick=\"editar('" + json[i].cod_for_cob + "','" + json[i].descrip_for_cob +"')\" src=\"../img/update.png\" alt=\"Mod\"/ class='w3-btn'></td>";
-                filas += "<td><img onclick=\"eliminar('" + json[i].cod_for_cob + "','" + json[i].descrip_for_cob + "')\" src=\"../img/delete.png\" alt=\"Elim\" class='w3-btn'/></td>";
+                filas += "<td>" + json[i].cod_marca + "</td>";
+                filas += "<td>" + json[i].descrip_marca + "</td>";
+                filas += "<td><img onclick=\"editar('" + json[i].cod_marca + "','" + json[i].descrip_marca +"')\" src=\"../img/update.png\" alt=\"Mod\"/ class='w3-btn'></td>";
+                filas += "<td><img onclick=\"eliminar('" + json[i].cod_marca + "','" + json[i].descrip_marca + "')\" src=\"../img/delete.png\" alt=\"Elim\" class='w3-btn'/></td>";
                 filas += "</tr>";
             }
             
@@ -37,7 +37,7 @@ function CargaTabla() {
 function agregar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/formaCobroCtr.php";
+            URL = "../PHP/MarcaCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -56,8 +56,8 @@ function agregar() {
     xhr.send(JSON.stringify(
             datos = {
                 Bandera: 1,
-                cod_for_cob: (document.getElementById('cod_for_cob').value === '' ? 0 : document.getElementById('cod_for_cob').value),
-                cob_descripcion: document.getElementById('cob_descripcion').value
+                cod_marca: (document.getElementById('cod_marca').value === '' ? 0 : document.getElementById('cod_marca').value),
+                descrip_marca: document.getElementById('descrip_marca').value
  }));
 
 
@@ -66,7 +66,7 @@ function agregar() {
 function modificar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/formaCobroCtr.php";
+            URL = "../PHP/MarcaCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -85,8 +85,8 @@ function modificar() {
     xhr.send(JSON.stringify(
             datos = {
                 Bandera: 2,
-                cod_for_cob: (document.getElementById('cod_for_cob').value === '' ? 0 : document.getElementById('cod_for_cob').value),
-                cob_descripcion: document.getElementById('cob_descripcion').value
+                cod_marca: (document.getElementById('cod_marca').value === '' ? 0 : document.getElementById('cod_marca').value),
+                descrip_marca: document.getElementById('descrip_marca').value
 }));
 
 
@@ -95,7 +95,7 @@ function modificar() {
 function iseliminar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/formaCobroCtr.php";
+            URL = "../PHP/MarcaCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -114,8 +114,8 @@ function iseliminar() {
     xhr.send(JSON.stringify(
             datos = {
                 Bandera: 3,
-                cod_for_cob: (document.getElementById('cod_for_cob').value === '' ? 0 : document.getElementById('cod_for_cob').value),
-                Descripcion : document.getElementById('cob_descripcion').value
+                cod_marca: (document.getElementById('cod_marca').value === '' ? 0 : document.getElementById('cod_marca').value),
+                Descripcion : document.getElementById('descrip_marca').value
 
                
             }));
@@ -124,14 +124,14 @@ function iseliminar() {
 }
 
 function limpiar() {
-  document.getElementById('cod_for_cob').value = "";
-    document.getElementById('cob_descripcion').value = "";
+  document.getElementById('cod_marca').value = "";
+    document.getElementById('descrip_marca').value = "";
   
 }
 
 function eliminar(id, nombre) {
-    document.getElementById("cod_for_cob").value = id;
-    document.getElementById("cob_descripcion").value = nombre;
+    document.getElementById("cod_marca").value = id;
+    document.getElementById("descrip_marca").value = nombre;
     if (confirm('Confirmar la eliminación del registro ' + id + ' - ' + nombre)) {
         iseliminar();
         limpiar();
@@ -140,15 +140,15 @@ function eliminar(id, nombre) {
     }
 }
 
-function editar(id, cob_descripcion) {
-    document.getElementById('cod_for_cob').value = id;
-    document.getElementById('cob_descripcion').value = cob_descripcion;
+function editar(id, descrip_marca) {
+    document.getElementById('cod_marca').value = id;
+    document.getElementById('descrip_marca').value = descrip_marca;
 }
 
 function validacionBtn(value){
     switch (value) {
         case 1://es agregar
-        if(document.getElementById('cob_descripcion').value.trim()===""){
+        if(document.getElementById('descrip_marca').value.trim()===""){
         alert("Por favor completa todos los campos");    
         }else{
         agregar();
@@ -156,15 +156,15 @@ function validacionBtn(value){
         }  
         break;
         case 2://es eliminar
-        if(document.getElementById('cod_for_cob').value.trim()===""){
+        if(document.getElementById('cod_marca').value.trim()===""){
         alert("Primero selecciona un registro");    
         }else{
-        eliminar(document.getElementById('cod_for_cob').value.trim(),document.getElementById('cob_descripcion').value.trim()); 
+        eliminar(document.getElementById('cod_marca').value.trim(),document.getElementById('descrip_marca').value.trim()); 
         limpiar();
         }       
             break;
         case 3://es modificar
-         if(document.getElementById('cod_for_cob').value.trim()===""){
+         if(document.getElementById('cod_marca').value.trim()===""){
         alert("Primero selecciona un registro");    
         }else{
         modificar();
