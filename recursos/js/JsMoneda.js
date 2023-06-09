@@ -17,9 +17,10 @@ function CargaTabla() {
             for (i = 0; i < json.length; i++) {
                 filas += "<tr>";
                 filas += "<td>" + json[i].cod_moneda + "</td>";
-                filas += "<td>" + json[i].descrip_seccion + "</td>";
-                filas += "<td><img onclick=\"editar('" + json[i].cod_moneda + "','" + json[i].descrip_seccion +"')\" src=\"../img/update.png\" alt=\"Mod\"/ class='w3-btn'></td>";
-                filas += "<td><img onclick=\"eliminar('" + json[i].cod_moneda + "','" + json[i].descrip_seccion + "')\" src=\"../img/delete.png\" alt=\"Elim\" class='w3-btn'/></td>";
+                filas += "<td>" + json[i].descrip_moneda + "</td>";
+                filas += "<td>" + json[i].codigo + "</td>";
+                filas += "<td><img onclick=\"editar('" + json[i].cod_moneda + "','" + json[i].descrip_moneda + "','" + json[i].codigo  +"')\" src=\"../img/update.png\" alt=\"Mod\"/ class='w3-btn'></td>";
+                filas += "<td><img onclick=\"eliminar('" + json[i].cod_moneda + "','" + json[i].descrip_moneda + "','" + json[i].codigo + "')\" src=\"../img/delete.png\" alt=\"Elim\" class='w3-btn'/></td>";
                 filas += "</tr>";
             }
             
@@ -37,7 +38,7 @@ function CargaTabla() {
 function agregar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/SeccionACtr.php";
+            URL = "../PHP/MonedaCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -57,7 +58,8 @@ function agregar() {
             datos = {
                 Bandera: 1,
                 cod_moneda: (document.getElementById('cod_moneda').value === '' ? 0 : document.getElementById('cod_moneda').value),
-                descrip_seccion: document.getElementById('descrip_seccion').value
+                descrip_moneda: document.getElementById('descrip_moneda').value,
+                codigo: document.getElementById('codigo').value
  }));
 
 
@@ -66,7 +68,7 @@ function agregar() {
 function modificar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/SeccionACtr.php";
+            URL = "../PHP/MonedaCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -86,7 +88,8 @@ function modificar() {
             datos = {
                 Bandera: 2,
                 cod_moneda: (document.getElementById('cod_moneda').value === '' ? 0 : document.getElementById('cod_moneda').value),
-                descrip_seccion: document.getElementById('descrip_seccion').value
+                descrip_moneda: document.getElementById('descrip_moneda').value, 
+                codigo: document.getElementById('codigo').value
 }));
 
 
@@ -95,7 +98,7 @@ function modificar() {
 function iseliminar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/SeccionACtr.php";
+            URL = "../PHP/MonedaCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -115,7 +118,7 @@ function iseliminar() {
             datos = {
                 Bandera: 3,
                 cod_moneda: (document.getElementById('cod_moneda').value === '' ? 0 : document.getElementById('cod_moneda').value),
-                Descripcion : document.getElementById('descrip_seccion').value
+                Descripcion : document.getElementById('descrip_moneda').value
 
                
             }));
@@ -125,13 +128,14 @@ function iseliminar() {
 
 function limpiar() {
   document.getElementById('cod_moneda').value = "";
-    document.getElementById('descrip_seccion').value = "";
+  document.getElementById('descrip_moneda').value = "";
+  document.getElementById('codigo').value = "";
   
 }
 
 function eliminar(id, nombre) {
     document.getElementById("cod_moneda").value = id;
-    document.getElementById("descrip_seccion").value = nombre;
+    document.getElementById("descrip_moneda").value = nombre;
     if (confirm('Confirmar la eliminación del registro ' + id + ' - ' + nombre)) {
         iseliminar();
         limpiar();
@@ -140,15 +144,16 @@ function eliminar(id, nombre) {
     }
 }
 
-function editar(id, descrip_seccion) {
+function editar(id, descrip_moneda, codigo) {
     document.getElementById('cod_moneda').value = id;
-    document.getElementById('descrip_seccion').value = descrip_seccion;
+    document.getElementById('descrip_moneda').value = descrip_moneda;
+    document.getElementById('codigo').value = codigo;
 }
 
 function validacionBtn(value){
     switch (value) {
         case 1://es agregar
-        if(document.getElementById('descrip_seccion').value.trim()===""){
+        if(document.getElementById('descrip_moneda').value.trim()===""){
         alert("Por favor completa todos los campos");    
         }else{
         agregar();
@@ -159,7 +164,7 @@ function validacionBtn(value){
         if(document.getElementById('cod_moneda').value.trim()===""){
         alert("Primero selecciona un registro");    
         }else{
-        eliminar(document.getElementById('cod_moneda').value.trim(),document.getElementById('descrip_seccion').value.trim()); 
+        eliminar(document.getElementById('cod_moneda').value.trim(),document.getElementById('descrip_moneda').value.trim()); 
         limpiar();
         }       
             break;

@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $id_perfil = $datos["id_perfil"];
      $bd=Db::getInstance(); 
             
-$sql="SELECT * FROM menu where estado = 1";
+$sql="SELECT * FROM menu where estado = 1 order by orden";
 
 #$log->insert('Imprimiendo '.$datos.' datos');    
 

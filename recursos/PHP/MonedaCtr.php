@@ -45,7 +45,7 @@ function controlAcceso($Bandera) {
 
 function cargartabla() {
     global $bd;
-    $sql = "SELECT `cod_moneda`, `descrip_moneda` FROM `moneda`";
+    $sql = "SELECT * FROM `moneda`";
     
     $stmt = $bd->ejecutar($sql);
     
@@ -59,11 +59,13 @@ function cargartabla() {
 
         $cod_moneda = $fila[0];
         $descrip_moneda = $fila[1];
+        $codigo = $fila[2];
 
 
         $json[] = array(
             'cod_moneda' => $cod_moneda,
-            'descrip_moneda' => $descrip_moneda
+            'descrip_moneda' => $descrip_moneda,
+            'codigo' => $codigo
       
         );
         
@@ -76,13 +78,15 @@ function agregar() {
     $datos = json_decode(file_get_contents("php://input"), true);
     global $bd;
     $descrip_moneda = $datos["descrip_moneda"];  
-  
-       $sql = "INSERT INTO `moneda`(`descrip_moneda`) VALUES  (?)";
+    $codigo = $datos["codigo"];  
+        
+    #var_dump($datos);
+    $sql = "INSERT INTO `moneda`(`descrip_moneda`,`codigo`) VALUES  (?,?)";
 
     $stmt3 = $bd->ejecutarPrepared($sql);
-    //var_dump($stmt3);
+   
 
-    mysqli_stmt_bind_param($stmt3,"s",$descrip_moneda);
+    mysqli_stmt_bind_param($stmt3,"ss",$descrip_moneda,$codigo);
 
     mysqli_stmt_execute($stmt3);
 
@@ -103,18 +107,22 @@ function agregar() {
 function Modificar() {
     global $bd;
     $datos = json_decode(file_get_contents("php://input"), true);
+    
        
     $cod_moneda = $datos["cod_moneda"];
     $descrip_moneda = $datos["descrip_moneda"];
+    $codigo = $datos["codigo"];
+    
     
     $retorno = "";
     $json = array();
         
-     $sql3 = "UPDATE `moneda` SET `descrip_moneda`=? WHERE `cod_moneda`=?";
+    $sql3 = "UPDATE `moneda` SET `descrip_moneda`=?, `codigo`=?  WHERE `cod_moneda`=?";
 
+    
     $stmt3 = $bd->ejecutarPrepared($sql3);
     
-    mysqli_stmt_bind_param($stmt3, "ss",$descrip_moneda,$cod_moneda);
+    mysqli_stmt_bind_param($stmt3, "sss",$descrip_moneda,$codigo,$cod_moneda);
 
     mysqli_stmt_execute($stmt3);
 

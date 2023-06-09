@@ -45,7 +45,7 @@ function controlAcceso($Bandera) {
 
 function cargartabla() {
     global $bd;
-    $sql = "SELECT `cod_moneda`, `descrip_moneda` FROM `moneda`";
+    $sql = "SELECT `cod_nacion`, `descrip_nacion` FROM `nacion`";
     
     $stmt = $bd->ejecutar($sql);
     
@@ -57,13 +57,13 @@ function cargartabla() {
     while ($fila = $bd->obtener_fila($stmt, 0)) {
         
 
-        $cod_moneda = $fila[0];
-        $descrip_moneda = $fila[1];
+        $cod_nacion = $fila[0];
+        $descrip_nacion = $fila[1];
 
 
         $json[] = array(
-            'cod_moneda' => $cod_moneda,
-            'descrip_moneda' => $descrip_moneda
+            'cod_nacion' => $cod_nacion,
+            'descrip_nacion' => $descrip_nacion
       
         );
         
@@ -75,14 +75,14 @@ function cargartabla() {
 function agregar() {
     $datos = json_decode(file_get_contents("php://input"), true);
     global $bd;
-    $descrip_moneda = $datos["descrip_moneda"];  
+    $descrip_nacion = $datos["descrip_nacion"];  
   
-       $sql = "INSERT INTO `moneda`(`descrip_moneda`) VALUES  (?)";
+       $sql = "INSERT INTO `nacion`(`descrip_nacion`) VALUES  (?)";
 
     $stmt3 = $bd->ejecutarPrepared($sql);
     //var_dump($stmt3);
 
-    mysqli_stmt_bind_param($stmt3,"s",$descrip_moneda);
+    mysqli_stmt_bind_param($stmt3,"s",$descrip_nacion);
 
     mysqli_stmt_execute($stmt3);
 
@@ -104,17 +104,17 @@ function Modificar() {
     global $bd;
     $datos = json_decode(file_get_contents("php://input"), true);
        
-    $cod_moneda = $datos["cod_moneda"];
-    $descrip_moneda = $datos["descrip_moneda"];
+    $cod_nacion = $datos["cod_nacion"];
+    $descrip_nacion = $datos["descrip_nacion"];
     
     $retorno = "";
     $json = array();
         
-     $sql3 = "UPDATE `moneda` SET `descrip_moneda`=? WHERE `cod_moneda`=?";
+     $sql3 = "UPDATE `nacion` SET `descrip_nacion`=? WHERE `cod_nacion`=?";
 
     $stmt3 = $bd->ejecutarPrepared($sql3);
     
-    mysqli_stmt_bind_param($stmt3, "ss",$descrip_moneda,$cod_moneda);
+    mysqli_stmt_bind_param($stmt3, "ss",$descrip_nacion,$cod_nacion);
 
     mysqli_stmt_execute($stmt3);
 
@@ -139,15 +139,15 @@ function Eliminar() {
     global $bd;
     $datos = json_decode(file_get_contents("php://input"), true);
         
-    $cod_moneda = $datos["cod_moneda"];
+    $cod_nacion = $datos["cod_nacion"];
     $retorno = "";
     $json = array();
 
-    $sql3 = "DELETE FROM `moneda` where `cod_moneda`=?";
+    $sql3 = "DELETE FROM `nacion` where `cod_nacion`=?";
 
     $stmt3 = $bd->ejecutarPrepared($sql3);
 
-    mysqli_stmt_bind_param($stmt3, "s", $cod_moneda);
+    mysqli_stmt_bind_param($stmt3, "s", $cod_nacion);
     
     mysqli_stmt_execute($stmt3);
 

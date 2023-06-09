@@ -1,0 +1,2 @@
+2023-04-20 08:50:53 [ip] ::1 [text] buscar apertura cierre
+2023-04-20 08:50:53 [ip] ::1 [text] select apertura: SELECT * FROM `aper_cie` WHERE cod_usu=1 and fecha_cie is null

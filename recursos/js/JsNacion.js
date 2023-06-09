@@ -6,7 +6,7 @@ function CargaTabla() {
 
             var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/MonedaCtr.php";
+            URL = "../PHP/NacionCtr.php";
             xhr.open(method, URL, true);
             xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -16,10 +16,10 @@ function CargaTabla() {
             var opcion1;
             for (i = 0; i < json.length; i++) {
                 filas += "<tr>";
-                filas += "<td>" + json[i].cod_moneda + "</td>";
-                filas += "<td>" + json[i].descrip_seccion + "</td>";
-                filas += "<td><img onclick=\"editar('" + json[i].cod_moneda + "','" + json[i].descrip_seccion +"')\" src=\"../img/update.png\" alt=\"Mod\"/ class='w3-btn'></td>";
-                filas += "<td><img onclick=\"eliminar('" + json[i].cod_moneda + "','" + json[i].descrip_seccion + "')\" src=\"../img/delete.png\" alt=\"Elim\" class='w3-btn'/></td>";
+                filas += "<td>" + json[i].cod_nacion + "</td>";
+                filas += "<td>" + json[i].descrip_nacion + "</td>";
+                filas += "<td><img onclick=\"editar('" + json[i].cod_nacion + "','" + json[i].descrip_nacion +"')\" src=\"../img/update.png\" alt=\"Mod\"/ class='w3-btn'></td>";
+                filas += "<td><img onclick=\"eliminar('" + json[i].cod_nacion + "','" + json[i].descrip_nacion + "')\" src=\"../img/delete.png\" alt=\"Elim\" class='w3-btn'/></td>";
                 filas += "</tr>";
             }
             
@@ -37,7 +37,7 @@ function CargaTabla() {
 function agregar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/SeccionACtr.php";
+            URL = "../PHP/NacionCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -56,8 +56,8 @@ function agregar() {
     xhr.send(JSON.stringify(
             datos = {
                 Bandera: 1,
-                cod_moneda: (document.getElementById('cod_moneda').value === '' ? 0 : document.getElementById('cod_moneda').value),
-                descrip_seccion: document.getElementById('descrip_seccion').value
+                cod_nacion: (document.getElementById('cod_nacion').value === '' ? 0 : document.getElementById('cod_nacion').value),
+                descrip_nacion: document.getElementById('descrip_nacion').value
  }));
 
 
@@ -66,7 +66,7 @@ function agregar() {
 function modificar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/SeccionACtr.php";
+            URL = "../PHP/NacionCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -85,8 +85,8 @@ function modificar() {
     xhr.send(JSON.stringify(
             datos = {
                 Bandera: 2,
-                cod_moneda: (document.getElementById('cod_moneda').value === '' ? 0 : document.getElementById('cod_moneda').value),
-                descrip_seccion: document.getElementById('descrip_seccion').value
+                cod_nacion: (document.getElementById('cod_nacion').value === '' ? 0 : document.getElementById('cod_nacion').value),
+                descrip_nacion: document.getElementById('descrip_nacion').value
 }));
 
 
@@ -95,7 +95,7 @@ function modificar() {
 function iseliminar() {
     var xhr = new XMLHttpRequest(),
             method = "POST",
-            URL = "../PHP/SeccionACtr.php";
+            URL = "../PHP/NacionCtr.php";
     xhr.open(method, URL, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -114,8 +114,8 @@ function iseliminar() {
     xhr.send(JSON.stringify(
             datos = {
                 Bandera: 3,
-                cod_moneda: (document.getElementById('cod_moneda').value === '' ? 0 : document.getElementById('cod_moneda').value),
-                Descripcion : document.getElementById('descrip_seccion').value
+                cod_nacion: (document.getElementById('cod_nacion').value === '' ? 0 : document.getElementById('cod_nacion').value),
+                Descripcion : document.getElementById('descrip_nacion').value
 
                
             }));
@@ -124,14 +124,14 @@ function iseliminar() {
 }
 
 function limpiar() {
-  document.getElementById('cod_moneda').value = "";
-    document.getElementById('descrip_seccion').value = "";
+  document.getElementById('cod_nacion').value = "";
+    document.getElementById('descrip_nacion').value = "";
   
 }
 
 function eliminar(id, nombre) {
-    document.getElementById("cod_moneda").value = id;
-    document.getElementById("descrip_seccion").value = nombre;
+    document.getElementById("cod_nacion").value = id;
+    document.getElementById("descrip_nacion").value = nombre;
     if (confirm('Confirmar la eliminación del registro ' + id + ' - ' + nombre)) {
         iseliminar();
         limpiar();
@@ -140,15 +140,15 @@ function eliminar(id, nombre) {
     }
 }
 
-function editar(id, descrip_seccion) {
-    document.getElementById('cod_moneda').value = id;
-    document.getElementById('descrip_seccion').value = descrip_seccion;
+function editar(id, descrip_nacion) {
+    document.getElementById('cod_nacion').value = id;
+    document.getElementById('descrip_nacion').value = descrip_nacion;
 }
 
 function validacionBtn(value){
     switch (value) {
         case 1://es agregar
-        if(document.getElementById('descrip_seccion').value.trim()===""){
+        if(document.getElementById('descrip_nacion').value.trim()===""){
         alert("Por favor completa todos los campos");    
         }else{
         agregar();
@@ -156,15 +156,15 @@ function validacionBtn(value){
         }  
         break;
         case 2://es eliminar
-        if(document.getElementById('cod_moneda').value.trim()===""){
+        if(document.getElementById('cod_nacion').value.trim()===""){
         alert("Primero selecciona un registro");    
         }else{
-        eliminar(document.getElementById('cod_moneda').value.trim(),document.getElementById('descrip_seccion').value.trim()); 
+        eliminar(document.getElementById('cod_nacion').value.trim(),document.getElementById('descrip_nacion').value.trim()); 
         limpiar();
         }       
             break;
         case 3://es modificar
-         if(document.getElementById('cod_moneda').value.trim()===""){
+         if(document.getElementById('cod_nacion').value.trim()===""){
         alert("Primero selecciona un registro");    
         }else{
         modificar();

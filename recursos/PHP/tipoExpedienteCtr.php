@@ -45,7 +45,7 @@ function controlAcceso($Bandera) {
 
 function cargartabla() {
     global $bd;
-    $sql = "SELECT `cod_moneda`, `descrip_moneda` FROM `moneda`";
+    $sql = "SELECT `cod_tipo_expe`, `descrip_tipo_expe` FROM `tipo_expediente`";
     
     $stmt = $bd->ejecutar($sql);
     
@@ -57,13 +57,13 @@ function cargartabla() {
     while ($fila = $bd->obtener_fila($stmt, 0)) {
         
 
-        $cod_moneda = $fila[0];
-        $descrip_moneda = $fila[1];
+        $cod_tipo_expe = $fila[0];
+        $descrip_tipo_expe = $fila[1];
 
 
         $json[] = array(
-            'cod_moneda' => $cod_moneda,
-            'descrip_moneda' => $descrip_moneda
+            'cod_tipo_expe' => $cod_tipo_expe,
+            'descrip_tipo_expe' => $descrip_tipo_expe
       
         );
         
@@ -75,14 +75,14 @@ function cargartabla() {
 function agregar() {
     $datos = json_decode(file_get_contents("php://input"), true);
     global $bd;
-    $descrip_moneda = $datos["descrip_moneda"];  
+    $descrip_tipo_expe = $datos["descrip_tipo_expe"];  
   
-       $sql = "INSERT INTO `moneda`(`descrip_moneda`) VALUES  (?)";
+       $sql = "INSERT INTO `tipo_expediente`(`descrip_tipo_expe`) VALUES  (?)";
 
     $stmt3 = $bd->ejecutarPrepared($sql);
     //var_dump($stmt3);
 
-    mysqli_stmt_bind_param($stmt3,"s",$descrip_moneda);
+    mysqli_stmt_bind_param($stmt3,"s",$descrip_tipo_expe);
 
     mysqli_stmt_execute($stmt3);
 
@@ -104,17 +104,17 @@ function Modificar() {
     global $bd;
     $datos = json_decode(file_get_contents("php://input"), true);
        
-    $cod_moneda = $datos["cod_moneda"];
-    $descrip_moneda = $datos["descrip_moneda"];
+    $cod_tipo_expe = $datos["cod_tipo_expe"];
+    $descrip_tipo_expe = $datos["descrip_tipo_expe"];
     
     $retorno = "";
     $json = array();
         
-     $sql3 = "UPDATE `moneda` SET `descrip_moneda`=? WHERE `cod_moneda`=?";
+     $sql3 = "UPDATE `tipo_expediente` SET `descrip_tipo_expe`=? WHERE `cod_tipo_expe`=?";
 
     $stmt3 = $bd->ejecutarPrepared($sql3);
     
-    mysqli_stmt_bind_param($stmt3, "ss",$descrip_moneda,$cod_moneda);
+    mysqli_stmt_bind_param($stmt3, "ss",$descrip_tipo_expe,$cod_tipo_expe);
 
     mysqli_stmt_execute($stmt3);
 
@@ -139,15 +139,15 @@ function Eliminar() {
     global $bd;
     $datos = json_decode(file_get_contents("php://input"), true);
         
-    $cod_moneda = $datos["cod_moneda"];
+    $cod_tipo_expe = $datos["cod_tipo_expe"];
     $retorno = "";
     $json = array();
 
-    $sql3 = "DELETE FROM `moneda` where `cod_moneda`=?";
+    $sql3 = "DELETE FROM `tipo_expediente` where `cod_tipo_expe`=?";
 
     $stmt3 = $bd->ejecutarPrepared($sql3);
 
-    mysqli_stmt_bind_param($stmt3, "s", $cod_moneda);
+    mysqli_stmt_bind_param($stmt3, "s", $cod_tipo_expe);
     
     mysqli_stmt_execute($stmt3);
 
