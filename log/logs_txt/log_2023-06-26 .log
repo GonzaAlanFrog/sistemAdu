@@ -1,0 +1,14 @@
+2023-06-26 23:59:22 [ip] ::1 [text] Inciando Sesion
+2023-06-26 23:59:22 [ip] ::1 [text] Datos Recibidos:
+2023-06-26 23:59:22 [ip] ::1 [text] Usuario: gmareco
+2023-06-26 23:59:22 [ip] ::1 [text] Password: 1234
+2023-06-26 23:59:22 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE usuario ='gmareco' and clave ='1234'
+2023-06-26 23:59:22 [ip] ::1 [text] El usuario gmareco No pudo Iniciar Sesion
+2023-06-26 23:59:22 [ip] ::1 [text] Fin Session
+2023-06-26 23:59:28 [ip] ::1 [text] Inciando Sesion
+2023-06-26 23:59:28 [ip] ::1 [text] Datos Recibidos:
+2023-06-26 23:59:28 [ip] ::1 [text] Usuario: gmareo
+2023-06-26 23:59:28 [ip] ::1 [text] Password: 123
+2023-06-26 23:59:28 [ip] ::1 [text] SQL ACCESO:SELECT cod_emple, cod_perfil_usu, cod_usu FROM usuario WHERE usuario ='gmareo' and clave ='123'
+2023-06-26 23:59:28 [ip] ::1 [text] El usuario gmareo No pudo Iniciar Sesion
+2023-06-26 23:59:28 [ip] ::1 [text] Fin Session
